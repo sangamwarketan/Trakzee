@@ -121,6 +121,7 @@ public class HomePage {
 	public void user_get_the_list_of_menus(String moudles) {
 		ListComparator.compareListByText(DriverFactory.getDriver(), PL_Home.listMainMenus, moudles,
 			"To match the list", "");
+		
 	
 	}
 
