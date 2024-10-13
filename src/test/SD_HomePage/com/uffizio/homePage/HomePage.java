@@ -43,7 +43,7 @@ public class HomePage {
 		clickOnAnyButton.callMeToClickOnAnyButtonWithNameAndXpath(DriverFactory.getDriver(), "User icon",
 				PL_Commons.addressUserIcon);
 		Thread.sleep(500);
-	}
+}
 
 	@Then("User click on Logout")
 	public void user_click_on_logout() {
