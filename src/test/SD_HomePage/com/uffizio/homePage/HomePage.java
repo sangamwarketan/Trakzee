@@ -120,7 +120,7 @@ public class HomePage {
 	@Given("User Get the list of menus {string}")
 	public void user_get_the_list_of_menus(String moudles) {
 		ListComparator.compareListByText(DriverFactory.getDriver(), PL_Home.listMainMenus, moudles,
-				"To match the list", "");
+			"To match the list", "");
 
 	}
 
