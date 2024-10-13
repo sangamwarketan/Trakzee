@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	<Properties>
+		<Property name="basePath">./Logs</Property>
+	</Properties>
+
+	<Appenders>
+		<!-- Console logs -->
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern=" [%t] %msg%n" /> 
+		</Console>
+
+		<!-- RollingFile file logs -->
+		<RollingFile name="File" fileName="${basePath}/Automation.log"
+			filePattern="${basePath}/automation-%d{yyyy-mm-dd}-%i.log.gz">
+			<PatternLayout pattern="%d{yyyy-mm-dd} %d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="150000" />
+
+		</RollingFile>
+
+		<!-- RollingFile Appender for report logs -->
+		<RollingFile name="ReportFile" fileName="${basePath}/ReportLog.log"
+			filePattern="${basePath}/ReportLog-%d{yyyy-MM-dd}-%i.log.gz">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="5 MB" />
+		</RollingFile>
+
+	</Appenders>
+
+	<!-- Logger for existing features (uses Console and File appenders) -->
+	<Loggers>
+		<Root level="Info">
+			<AppenderRef ref="File" />
+			<AppenderRef ref="Console" />
+		</Root>
+		<!--		 Logger for existing features (uses Console and File appenders) 
+        <Logger name="existingLogger" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Logger>-->
+        
+
+		<!-- Logger for reports (uses ReportFile appender) -->
+		<Logger name="reportLogger" level="info" additivity="false">
+			<AppenderRef ref="ReportFile" />
+			<AppenderRef ref="File" />
+			<AppenderRef ref="Console" />
+		</Logger>
+		
+
+
+	</Loggers>
+
+
+</Configuration>
+
+
+<!--This is original file-->
+<!--  RollingFileAppender 
+
+%-5level %logger{36}
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="DEBUG">
+    <Appenders>
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <RollingFile name="LogToRollingFile" fileName="logs/app.log"
+                    filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+        <PatternLayout>
+            <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+        </PatternLayout>
+        <Policies>
+            <TimeBasedTriggeringPolicy />
+            <SizeBasedTriggeringPolicy size="10 MB"/>
+        </Policies>
+    </RollingFile>
+
+    </Appenders>
+    <Loggers>
+       
+        <Logger name="com.mkyong" level="debug" additivity="false">
+            <AppenderRef ref="LogToRollingFile"/>
+        </Logger>
+        <Root level="error">
+            <AppenderRef ref="LogToConsole"/>
+        </Root>
+    </Loggers>
+</Configuration>
+
+-->

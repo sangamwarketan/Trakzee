@@ -1,0 +1,21 @@
+2024-10-09 20:56:23.105 [main] INFO  reportLogger - ✅ Welcome To Trakzee Web Automation
+2024-10-09 20:56:23.113 [main] INFO  reportLogger - Selected Browser: chrome
+2024-10-09 20:56:25.638 [main] INFO  reportLogger - Selected Server: live and URL is: https://trakzee.uffizio.com/jsp/trakzee_login.jsp
+2024-10-09 20:56:33.948 [main] INFO  reportLogger - values: Dashboard
+2024-10-09 20:56:33.964 [main] INFO  reportLogger - values: Tracking
+2024-10-09 20:56:33.977 [main] INFO  reportLogger - values: Reports
+2024-10-09 20:56:33.991 [main] INFO  reportLogger - values: Chart
+2024-10-09 20:56:34.006 [main] INFO  reportLogger - values: Settings
+2024-10-09 20:56:35.264 [main] INFO  reportLogger - Mouse move on the element: Dashboard
+2024-10-09 20:56:36.893 [main] INFO  reportLogger - Mouse move on the element: Settings
+2024-10-09 20:56:38.476 [main] INFO  reportLogger - Mouse move on the element: Reports
+2024-10-09 20:56:49.544 [main] INFO  reportLogger - Exception from tooltipTitle: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='tree-module']//button[@title='Charts']"}
+  (Session info: chrome=129.0.6668.90)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'UT130', ip: '192.168.0.127', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6641d82d0359176568d16024e70eafed, findElement {using=xpath, value=//div[@id='tree-module']//button[@title='Charts']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.91 (b00bc8b76d60..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61403}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61403/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6641d82d0359176568d16024e70eafed
+2024-10-09 20:56:50.653 [main] INFO  reportLogger - Mouse move on the element: Tracking

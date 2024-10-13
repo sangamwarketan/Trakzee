@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-09T20:56:17 IST" name="Default suite" finished-at="2024-10-09T20:56:55 IST" duration-ms="38166">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.uffizio.runner.Runner2@55b0dcab]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-10-09T20:56:17 IST" name="Default test" finished-at="2024-10-09T20:56:55 IST" duration-ms="38166">
+      <class name="com.uffizio.runner.Runner2">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.uffizio.runner.Runner2@55b0dcab]" started-at="2024-10-09T20:56:17 IST" name="setUpClass" finished-at="2024-10-09T20:56:18 IST" duration-ms="844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2af9a5ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.uffizio.runner.Runner2@55b0dcab]" started-at="2024-10-09T20:56:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-09T20:56:33 IST" duration-ms="15614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Login in Application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["HomePage Features"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.uffizio.runner.Runner2@55b0dcab]" started-at="2024-10-09T20:56:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-09T20:56:34 IST" duration-ms="272" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check The Main Manus List"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["HomePage Features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+To match the list: Lists differ at element [1]:  Settings != Tracking expected [ Settings] but found [Tracking]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+To match the list: Lists differ at element [1]:  Settings != Tracking expected [ Settings] but found [Tracking]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at com.uffizio.utilities.ListComparator.compareListByText(ListComparator.java:125)
+at com.uffizio.homePage.HomePage.user_get_the_list_of_menus(HomePage.java:122)
+at ✽.User Get the list of menus "Dashboard, Settings, Reports, Charts, Tracking"(file:///C:/Users/Public/QA/Eclipse%20Project/WebAutomation/Trakzee_WATM/src/test/resources/FeaturesFiles/HomePage/HomePage.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.uffizio.runner.Runner2@55b0dcab]" started-at="2024-10-09T20:56:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-09T20:56:51 IST" duration-ms="17014" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check The Navigations"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["HomePage Features"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.uffizio.runner.Runner2@55b0dcab]" started-at="2024-10-09T20:56:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-09T20:56:53 IST" duration-ms="2498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Logout From Application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["HomePage Features"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.uffizio.runner.Runner2@55b0dcab]" started-at="2024-10-09T20:56:53 IST" name="tearDownClass" finished-at="2024-10-09T20:56:55 IST" duration-ms="1851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.uffizio.runner.Runner2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

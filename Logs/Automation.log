@@ -1,0 +1,46 @@
+2024-56-09 20:56:21.074 [main] INFO  com.uffizio.utilities.FileProcessor - File content deleted successfully.
+2024-56-09 20:56:23.078 [main] INFO  com.uffizio.utilities.FileProcessor - File content deleted successfully.
+2024-56-09 20:56:23.080 [main] INFO  com.uffizio.utilities.FileProcessor - No files to delete in the folder: ./Reports
+2024-56-09 20:56:23.092 [main] INFO  com.uffizio.utilities.FileProcessor - No files to delete in the folder: ./Screenshots
+2024-56-09 20:56:23.105 [main] INFO  reportLogger - ✅ Welcome To Trakzee Web Automation
+2024-56-09 20:56:23.113 [main] INFO  reportLogger - Selected Browser: chrome
+2024-56-09 20:56:25.638 [main] INFO  reportLogger - Selected Server: live and URL is: https://trakzee.uffizio.com/jsp/trakzee_login.jsp
+2024-56-09 20:56:26.221 [main] INFO  com.uffizio.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: user_enter_and
+2024-56-09 20:56:26.228 [main] INFO  com.uffizio.utilities.SetDataInTextInputField - Element name and xpath >>Username and >> //input[@id='username']
+2024-56-09 20:56:26.454 [main] INFO  com.uffizio.utilities.SetDataInTextInputField - Value Enteterd into >> Username with data >> HPADMIN@YOPMAIL.COM
+2024-56-09 20:56:26.455 [main] INFO  com.uffizio.utilities.SetDataInTextInputField - Method called 'callMeToFillDataIntoTextInputFieldWithNameAndXpathAndValue' and Caller method name: user_enter_and
+2024-56-09 20:56:26.455 [main] INFO  com.uffizio.utilities.SetDataInTextInputField - Element name and xpath >>Password and >> //input[@name='password']
+2024-56-09 20:56:26.639 [main] INFO  com.uffizio.utilities.SetDataInTextInputField - Value Enteterd into >> Password with data >> Admin@123
+2024-56-09 20:56:26.643 [main] INFO  com.uffizio.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: click_on_login_button
+2024-56-09 20:56:26.644 [main] INFO  com.uffizio.utilities.ClickOnAnyButton - Element name and xpath >> LoginBTN and >> //button[normalize-space()='Login'] | //input[contains(@value,'Log in')]
+2024-56-09 20:56:28.455 [main] INFO  com.uffizio.utilities.ClickOnAnyButton - clicke on button >> LoginBTN
+2024-56-09 20:56:33.948 [main] INFO  reportLogger - values: Dashboard
+2024-56-09 20:56:33.964 [main] INFO  reportLogger - values: Tracking
+2024-56-09 20:56:33.977 [main] INFO  reportLogger - values: Reports
+2024-56-09 20:56:33.991 [main] INFO  reportLogger - values: Chart
+2024-56-09 20:56:34.006 [main] INFO  reportLogger - values: Settings
+2024-56-09 20:56:34.180 [main] INFO  com.uffizio.utilities.HoverOnElement - Method called hoverOnElement and caller method name: check_the_navigation_of_module
+2024-56-09 20:56:35.264 [main] INFO  reportLogger - Mouse move on the element: Dashboard
+2024-56-09 20:56:35.777 [main] INFO  com.uffizio.utilities.HoverOnElement - Method called hoverOnElement and caller method name: check_the_navigation_of_module
+2024-56-09 20:56:36.893 [main] INFO  reportLogger - Mouse move on the element: Settings
+2024-56-09 20:56:37.409 [main] INFO  com.uffizio.utilities.HoverOnElement - Method called hoverOnElement and caller method name: check_the_navigation_of_module
+2024-56-09 20:56:38.476 [main] INFO  reportLogger - Mouse move on the element: Reports
+2024-56-09 20:56:38.990 [main] INFO  com.uffizio.utilities.HoverOnElement - Method called hoverOnElement and caller method name: check_the_navigation_of_module
+2024-56-09 20:56:49.544 [main] INFO  reportLogger - Exception from tooltipTitle: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='tree-module']//button[@title='Charts']"}
+  (Session info: chrome=129.0.6668.90)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'UT130', ip: '192.168.0.127', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6641d82d0359176568d16024e70eafed, findElement {using=xpath, value=//div[@id='tree-module']//button[@title='Charts']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.91 (b00bc8b76d60..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61403}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61403/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6641d82d0359176568d16024e70eafed
+2024-56-09 20:56:49.545 [main] INFO  com.uffizio.utilities.HoverOnElement - Method called hoverOnElement and caller method name: check_the_navigation_of_module
+2024-56-09 20:56:50.653 [main] INFO  reportLogger - Mouse move on the element: Tracking
+2024-56-09 20:56:51.214 [main] INFO  com.uffizio.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: user_click_on_user_icon
+2024-56-09 20:56:51.214 [main] INFO  com.uffizio.utilities.ClickOnAnyButton - Element name and xpath >> User icon and >> //div[@id='tree-user']//span[@title='User']
+2024-56-09 20:56:51.632 [main] INFO  com.uffizio.utilities.ClickOnAnyButton - clicke on button >> User icon
+2024-56-09 20:56:52.346 [main] INFO  com.uffizio.utilities.ClickOnAnyButton - Method called 'callMeToClickOnAnyButtonWithNameAndXpath' and Caller method name: user_click_on_logout
+2024-56-09 20:56:52.346 [main] INFO  com.uffizio.utilities.ClickOnAnyButton - Element name and xpath >> Logout Button and >> (//a[@id='username-a'])[2]
+2024-56-09 20:56:52.855 [main] INFO  com.uffizio.utilities.ClickOnAnyButton - clicke on button >> Logout Button
+2024-56-09 20:56:53.388 [main] INFO  com.uffizio.homePage.HomePage - ✅✅✅ LOGOUT DONE ...
